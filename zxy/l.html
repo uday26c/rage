@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover effective stress management techniques to improve your mental and physical well-being.">
+    <meta name="keywords" content="stress management, mental health, relaxation techniques, mindfulness, stress relief">
+    <title>Effective Stress Management Techniques</title>
+    <style>
+        /* Importing Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Setting up body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        /* Container class for width control */
+        .container {
+            width: 90%; /* Adjusted width */
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Header styling */
+                /* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+        /* Layout styling */
+        .layout {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 4rem; /* Increased gap */
+            padding: 0 2rem;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            background: #f4f4f4;
+        }
+
+        /* Main content styling */
+        .content {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 2rem;
+        }
+
+        .post-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-meta {
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .post-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer styling */
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+
+            .container {
+                width: 100%;
+                padding: 0 1rem;
+            }
+        }
+        .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        padding: 20px;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>strangesage</h1>
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/post.html" class="dropbtn">Posts &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="#">Latest Posts</a>
+                            <a href="#">Categories</a>
+                        </div>
+                    </li>
+                    <li><a href="/aboutus.html">About</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="layout">
+        <main class="content">
+            <div class="container">
+                <article class="post">
+                    <h2 class="post-title">Post</h2>
+                    <p class="post-meta">Posted on May 18, 2024 by John Doe</p>
+                    <img src="https://cdn.pixabay.com/photo/2017/02/06/10/54/sad-2042536_640.jpg" alt="Blog Post Image" class="post-image">
+                  
+                    <h1>Effective Stress Management Techniques</h1>
+
+    <h3>1. Practice Mindfulness</h3>
+    <p>Mindfulness involves focusing on the present moment without judgment. Techniques such as meditation, deep breathing, and yoga can help reduce stress and improve emotional regulation.</p>
+
+    <h3>2. Regular Physical Activity</h3>
+    <p>Engaging in regular physical activity, such as walking, jogging, or dancing, releases endorphins, which are natural stress relievers. Exercise also improves mood and overall health.</p>
+
+    <h3>3. Healthy Eating</h3>
+    <p>A balanced diet can positively impact your mood and energy levels. Eating plenty of fruits, vegetables, whole grains, and lean proteins supports overall health and helps manage stress.</p>
+
+    <h3>4. Adequate Sleep</h3>
+    <p>Getting enough sleep is crucial for stress management. Aim for 7-9 hours of quality sleep per night to restore your body and mind, improve concentration, and reduce anxiety.</p>
+
+    <h3>5. Time Management</h3>
+    <p>Effective time management can help reduce stress by preventing last-minute rushes and feeling overwhelmed. Prioritize tasks, set realistic goals, and take breaks to maintain productivity and calm.</p>
+
+    <h3>6. Build a Support System</h3>
+    <p>Having a strong support system of friends, family, and colleagues can provide emotional support and practical help. Sharing your feelings and experiences with others can alleviate stress.</p>
+
+    <h3>7. Hobbies and Interests</h3>
+    <p>Engaging in hobbies and activities you enjoy can provide a mental break from stressors. Whether it's reading, gardening, or playing a musical instrument, hobbies can enhance your well-being.</p>
+
+    <h3>8. Relaxation Techniques</h3>
+    <p>Relaxation techniques such as progressive muscle relaxation, guided imagery, and aromatherapy can help reduce stress levels. Incorporate these practices into your routine to promote relaxation.</p>
+
+    <h3>9. Professional Help</h3>
+    <p>If stress becomes overwhelming, seeking professional help is important. Therapists and counselors can provide strategies and support for managing stress effectively.</p>
+
+    <h3>10. Positive Thinking</h3>
+    <p>Adopting a positive mindset can help manage stress. Practice gratitude, focus on positive aspects of your life, and challenge negative thoughts to build resilience and improve your outlook.</p>
+
+    <h3>Conclusion</h3>
+    <p>Effective stress management is essential for maintaining mental and physical well-being. By practicing mindfulness, engaging in regular physical activity, eating a balanced diet, and utilizing relaxation techniques, you can reduce stress and improve your quality of life. Building a support system and seeking professional help when needed are also crucial steps in managing stress effectively.</p>
+
+                </article>
+            </div>
+        </main>
+        <aside class="sidebar"></aside>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+const menuToggle = document.querySelector('.menu-toggle');
+const featuredToggle = document.querySelector('.toggle-featured');
+const featuredPosts = document.getElementById('featured-posts');
+
+menuToggle.addEventListener('click', function () {
+    toggleMenu();
+});
+
+featuredToggle.addEventListener('click', function () {
+    featuredPosts.classList.toggle('closed');
+});
+
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+}
+});
+
+</script>
+</html>

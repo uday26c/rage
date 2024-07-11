@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore how technology is revolutionizing healthcare and its benefits, challenges, and future trends.">
+    <meta name="keywords" content="technology in healthcare, digital health, medical technology, healthcare innovation, future of healthcare">
+    <title>The Role of Technology in Healthcare</title>
+
+    <style>
+        /* Importing Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Setting up body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        /* Container class for width control */
+        .container {
+            width: 90%; /* Adjusted width */
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Header styling */
+                /* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+        /* Layout styling */
+        .layout {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 4rem; /* Increased gap */
+            padding: 0 2rem;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            background: #f4f4f4;
+        }
+
+        /* Main content styling */
+        .content {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 2rem;
+        }
+
+        .post-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-meta {
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .post-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer styling */
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+
+            .container {
+                width: 100%;
+                padding: 0 1rem;
+            }
+        }
+        .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        padding: 20px;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>strangesage</h1>
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/post.html" class="dropbtn">Posts &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="#">Latest Posts</a>
+                            <a href="#">Categories</a>
+                        </div>
+                    </li>
+                    <li><a href="/aboutus.html">About</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="layout">
+        <main class="content">
+            <div class="container">
+                <article class="post">
+                    <h2 class="post-title">Post</h2>
+                    <p class="post-meta">Posted on May 18, 2024 by John Doe</p>
+                    <img src="https://cdn.pixabay.com/photo/2017/07/23/10/44/dentist-2530990_640.jpg" alt="Blog Post Image" class="post-image">
+                  
+                    <h1>The Role of Technology in Healthcare</h1>
+
+                    <h3>1. Introduction to Technology in Healthcare</h3>
+                    <p>Technology has significantly transformed healthcare, improving patient outcomes, enhancing efficiency, and enabling advanced treatments. From electronic health records to telemedicine, technology is reshaping the medical landscape.</p>
+                
+                    <h3>2. Electronic Health Records (EHRs)</h3>
+                    <p>EHRs have revolutionized patient data management, allowing for seamless sharing of information among healthcare providers. This leads to more accurate diagnoses, better coordination of care, and improved patient outcomes.</p>
+                
+                    <h3>3. Telemedicine</h3>
+                    <p>Telemedicine enables remote consultations, making healthcare more accessible, especially for individuals in rural or underserved areas. It provides convenience, reduces travel time, and allows for timely medical interventions.</p>
+                
+                    <h3>4. Wearable Health Devices</h3>
+                    <p>Wearable devices, such as fitness trackers and smartwatches, monitor vital signs and physical activity. These devices help individuals manage their health proactively and allow healthcare providers to track patients' health data in real time.</p>
+                
+                    <h3>5. Artificial Intelligence (AI) in Healthcare</h3>
+                    <p>AI is transforming healthcare with applications like predictive analytics, medical imaging analysis, and personalized treatment plans. AI enhances diagnostic accuracy, speeds up drug discovery, and optimizes hospital operations.</p>
+                
+                    <h3>6. Robotics in Surgery</h3>
+                    <p>Robotic surgery systems offer precision, flexibility, and control beyond human capabilities. They enable minimally invasive procedures, reduce recovery times, and improve surgical outcomes.</p>
+                
+                    <h3>7. Blockchain for Health Data Security</h3>
+                    <p>Blockchain technology ensures the security and integrity of health data. It provides a transparent and immutable ledger for patient records, reducing the risk of data breaches and enhancing patient privacy.</p>
+                
+                    <h3>8. Virtual Reality (VR) in Medical Training</h3>
+                    <p>VR is revolutionizing medical training by providing immersive simulations for surgical procedures and emergency response scenarios. It enhances learning experiences and prepares healthcare professionals for real-world challenges.</p>
+                
+                    <h3>9. 3D Printing in Healthcare</h3>
+                    <p>3D printing technology is used to create customized medical devices, prosthetics, and even human tissues. It offers personalized treatment solutions and has the potential to revolutionize organ transplantation.</p>
+                
+                    <h3>10. Mobile Health Apps</h3>
+                    <p>Mobile health apps empower patients to manage their health and wellness. These apps provide tools for tracking symptoms, medication adherence, and accessing health information, promoting proactive health management.</p>
+                
+                    <h3>Conclusion</h3>
+                    <p>Technology is playing a pivotal role in advancing healthcare, making it more efficient, accessible, and effective. From electronic health records to AI and robotics, technological innovations are transforming the way healthcare is delivered and experienced. As technology continues to evolve, it holds the promise of even greater advancements in patient care and medical research.</p>
+                
+                </article>
+            </div>
+        </main>
+        <aside class="sidebar"></aside>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+const menuToggle = document.querySelector('.menu-toggle');
+const featuredToggle = document.querySelector('.toggle-featured');
+const featuredPosts = document.getElementById('featured-posts');
+
+menuToggle.addEventListener('click', function () {
+    toggleMenu();
+});
+
+featuredToggle.addEventListener('click', function () {
+    featuredPosts.classList.toggle('closed');
+});
+
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+}
+});
+
+</script>
+</html>

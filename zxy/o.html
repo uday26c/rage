@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the importance of physical fitness, its benefits, and practical tips to incorporate exercise into your daily routine.">
+    <meta name="keywords" content="physical fitness, exercise, health benefits, fitness tips, healthy lifestyle">
+    <title>The Importance of Physical Fitness</title>
+    <style>
+        /* Importing Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Setting up body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        /* Container class for width control */
+        .container {
+            width: 90%; /* Adjusted width */
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Header styling */
+                /* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+        /* Layout styling */
+        .layout {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 4rem; /* Increased gap */
+            padding: 0 2rem;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            background: #f4f4f4;
+        }
+
+        /* Main content styling */
+        .content {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 2rem;
+        }
+
+        .post-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-meta {
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .post-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer styling */
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+
+            .container {
+                width: 100%;
+                padding: 0 1rem;
+            }
+        }
+        .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        padding: 20px;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>strangesage</h1>
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/post.html" class="dropbtn">Posts &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="#">Latest Posts</a>
+                            <a href="#">Categories</a>
+                        </div>
+                    </li>
+                    <li><a href="/aboutus.html">About</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="layout">
+        <main class="content">
+            <div class="container">
+                <article class="post">
+                    <h2 class="post-title">Post</h2>
+                    <p class="post-meta">Posted on May 18, 2024 by John Doe</p>
+                    <img src="https://cdn.pixabay.com/photo/2023/09/11/14/19/weight-8246973_640.jpg" alt="Blog Post Image" class="post-image">
+                  
+                    <h1>The Importance of Physical Fitness</h1>
+
+                    <h3>1. Enhances Physical Health</h3>
+                    <p>Regular physical activity improves cardiovascular health, strengthens muscles, enhances flexibility, and boosts overall physical well-being. It reduces the risk of chronic diseases such as heart disease, diabetes, and obesity.</p>
+                
+                    <h3>2. Boosts Mental Health</h3>
+                    <p>Exercise has a positive impact on mental health by reducing symptoms of anxiety and depression. Physical activity stimulates the release of endorphins, which are natural mood lifters, and helps in managing stress effectively.</p>
+                
+                    <h3>3. Improves Sleep Quality</h3>
+                    <p>Regular exercise contributes to better sleep quality. It helps regulate sleep patterns, making it easier to fall asleep and stay asleep, leading to more restful and restorative sleep.</p>
+                
+                    <h3>4. Enhances Cognitive Function</h3>
+                    <p>Physical fitness is linked to improved cognitive function, including better memory, attention, and learning abilities. Exercise promotes brain health by increasing blood flow and stimulating the growth of new brain cells.</p>
+                
+                    <h3>5. Promotes Weight Management</h3>
+                    <p>Incorporating regular exercise into your routine helps in maintaining a healthy weight. Physical activity burns calories, increases metabolism, and supports weight loss and weight maintenance efforts.</p>
+                
+                    <h3>6. Strengthens Immune System</h3>
+                    <p>Exercise boosts the immune system, making the body more resistant to infections and diseases. Regular physical activity enhances immune function and contributes to overall health and longevity.</p>
+                
+                    <h3>7. Increases Energy Levels</h3>
+                    <p>Engaging in physical activity increases energy levels by improving circulation and oxygen flow to the muscles and tissues. Regular exercise can help combat fatigue and increase overall vitality.</p>
+                
+                    <h3>8. Builds Stronger Bones</h3>
+                    <p>Weight-bearing exercises, such as walking, running, and strength training, help build and maintain strong bones. Physical activity promotes bone density, reducing the risk of osteoporosis and fractures.</p>
+                
+                    <h3>9. Enhances Social Connections</h3>
+                    <p>Participating in group fitness activities, sports, or exercise classes fosters social connections and a sense of community. Social interactions during physical activities can boost mood and motivation.</p>
+                
+                    <h3>10. Increases Longevity</h3>
+                    <p>Regular physical activity is associated with a longer lifespan. Exercise reduces the risk of premature death by lowering the incidence of chronic diseases and improving overall health and well-being.</p>
+                
+                    <h3>Conclusion</h3>
+                    <p>The importance of physical fitness cannot be overstated. It enhances physical and mental health, improves sleep quality, and promotes weight management, among other benefits. By incorporating regular exercise into your daily routine, you can enjoy a healthier, more vibrant life. Prioritizing physical fitness is a crucial step towards achieving long-term health and well-being.</p>
+                
+                </article>
+            </div>
+        </main>
+        <aside class="sidebar"></aside>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+const menuToggle = document.querySelector('.menu-toggle');
+const featuredToggle = document.querySelector('.toggle-featured');
+const featuredPosts = document.getElementById('featured-posts');
+
+menuToggle.addEventListener('click', function () {
+    toggleMenu();
+});
+
+featuredToggle.addEventListener('click', function () {
+    featuredPosts.classList.toggle('closed');
+});
+
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+}
+});
+
+</script>
+</html>
